@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    THIS IS AN EXAMPLE
+    and a pretty bad one at that
+  -->
+  <head>
+    <meta charset="utf-8">
+    <title>jsfiller</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,100italic,300italic,400italic,500italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <h1>JSfiller</h1>
+    </header>
+    <div class="content">
+      <h2>Content</h2>
+      <button onclick="load()">Load content</button>
+      <div class="content-item">
+        <h3>Already existing content item</h3>
+        <div class="divider"></div>
+        <p>Info</p>
+        <p>More info</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/js/jsfiller/jsfiller.js"></script>
+    <script>
+      function load() {
+        $.getScript("/js/jsfiller/config.js", function() {
+          jsfiller_load("/content/db.js");
+        });
+      }
+    </script>
+  </body>
+</html>
