@@ -1,4 +1,6 @@
-var _0 = {
+items = [];
+
+items.push({
   type: 'link',
   id: 0,
   data: {
@@ -6,9 +8,9 @@ var _0 = {
     link: 'http://www.facebook.com',
     thumbnail: '/image/thumbnail/f348gh230gj.jpeg'
   }
-}
+});
 
-var _1 = {
+items.push({
   type: 'link',
   id: 1,
   data: {
@@ -16,15 +18,27 @@ var _1 = {
     link: 'http://www.facebook.com',
     thumbnail: '/image/thumbnail/f348gh230gj.jpeg'
   }
-}
+});
 
-var _2 = {
+items.push({
   type: 'text',
   id: 2,
   data: {
     title: 'This is a text item',
-    body: 'Hello, World! This text item is showcasing the jsfiller system!'
+    body: 'Hello, World! This text item is showcasing the jsfiller system!<br>\
+          Note that box shadows increase based on id number'
   }
-}
+});
 
-items = [_0,_1,_2]
+items.push({
+  type: 'video',
+  id: 3,
+  data: {
+    title: 'Big Buck Bunny',
+    video: {
+      source: '/video/bbb.mp4',
+      width: '100%',
+      height: 'auto',
+    }
+  }
+})
