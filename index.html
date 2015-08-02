@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!--
-    THIS IS AN EXAMPLE
-    and a pretty bad one at that
-  -->
   <head>
     <meta charset="utf-8">
     <title>jsfiller</title>
@@ -19,12 +15,10 @@
       <button onclick="loadFrontPage()">Load front page content</button>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="/js/jsfiller/jsfiller.js"></script>
+    <script src="/js/jsfiller.js"></script>
     <script>
       function loadFrontPage() {
-        $.getScript("/js/jsfiller/config.js", function() {
-          jsfiller_load("/content/frontPage.js", ".content");
-        });
+        jsfiller_load("/content/databases/frontPage.js", ".content");
       }
     </script>
   </body>

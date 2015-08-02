@@ -40,4 +40,4 @@ items.push({
       controls: true,
     }
   }
-})
+});
