@@ -1,4 +1,5 @@
 function jsfiller_load(db, loc) {
+  $(loc).empty();
   items = [];
   $.getScript(db, function() {
     for (i = 0; i < items.length; i++) {

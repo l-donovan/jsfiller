@@ -13,12 +13,13 @@
     <div class="content">
       <h2>Content</h2>
       <button onclick="loadFrontPage()">Load front page content</button>
+      <div id="frontpage-content"></div>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="/js/jsfiller.js"></script>
     <script>
       function loadFrontPage() {
-        jsfiller_load("/content/databases/frontPage.js", ".content");
+        jsfiller_load("/content/databases/frontPage.js", "#frontpage-content");
       }
     </script>
   </body>
