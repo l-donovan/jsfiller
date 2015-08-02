@@ -16,14 +16,14 @@
     </header>
     <div class="content">
       <h2>Content</h2>
-      <button onclick="load()">Load content</button>
+      <button onclick="loadFrontPage()">Load front page content</button>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="/js/jsfiller/jsfiller.js"></script>
     <script>
-      function load() {
+      function loadFrontPage() {
         $.getScript("/js/jsfiller/config.js", function() {
-          jsfiller_load("/content/db.js");
+          jsfiller_load("/content/frontPage.js", ".content");
         });
       }
     </script>
