@@ -1,8 +1,11 @@
+var id = 0;
+
 function jsfiller_load(db, loc) {
   $(loc).empty();
   items = [];
   $.getScript(db, function() {
     for (i = 0; i < items.length; i++) {
+      items[i].id = id;
       $.ajax({async: false, url: "/content/templates/" + items[i].type + ".html", success: function (html) {
         tokens = html.match(/\{\$[^\{\$\}]+\$\}/g);
         for (j = 0; j < tokens.length; j++) {
@@ -12,6 +15,7 @@ function jsfiller_load(db, loc) {
         }
         $(loc).append(html);
       }});
+      id++;
     }
   });
 }

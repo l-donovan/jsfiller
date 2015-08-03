@@ -1,6 +1,5 @@
 items.push({
   type: 'link',
-  id: 0,
   data: {
     title: 'This is a title!',
     link: 'http://www.facebook.com',
@@ -10,7 +9,6 @@ items.push({
 
 items.push({
   type: 'link',
-  id: 1,
   data: {
     title: 'This is a different title!',
     link: 'http://www.facebook.com',
@@ -20,7 +18,6 @@ items.push({
 
 items.push({
   type: 'text',
-  id: 2,
   data: {
     title: 'This is a text item',
     body: 'Hello, World! This text item is showcasing the jsfiller system!<br>\
@@ -30,7 +27,6 @@ items.push({
 
 items.push({
   type: 'video',
-  id: 3,
   data: {
     title: 'Big Buck Bunny',
     video: {
@@ -44,7 +40,6 @@ items.push({
 
 items.push({
   type: 'link',
-  id: 4,
   data: {
     title: 'This is a title!',
     link: 'http://www.facebook.com',
@@ -54,7 +49,6 @@ items.push({
 
 items.push({
   type: 'link',
-  id: 5,
   data: {
     title: 'This is a different title!',
     link: 'http://www.facebook.com',
@@ -64,7 +58,6 @@ items.push({
 
 items.push({
   type: 'text',
-  id: 6,
   data: {
     title: 'This is a text item',
     body: 'Hello, World! This text item is showcasing the jsfiller system!<br>\
@@ -74,7 +67,6 @@ items.push({
 
 items.push({
   type: 'video',
-  id: 7,
   data: {
     title: 'Big Buck Bunny',
     video: {
